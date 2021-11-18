@@ -2,16 +2,58 @@
   "name": "jest-web3",
   "description": "Jest Web3",
   "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "module": "dist/jest-provider.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/jest-provider.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/jest-provider.esm.js",
+      "limit": "10 KB"
+    }
+  ],
   "dependencies": {
     "ganache-core": "2.13.2"
   },
   "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.0",
+    "size-limit": "^7.0.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2",
     "@jest/environment": "^27.3.1",
     "@jest/types": "26.6.2",
     "@types/jest": "^27.0.2",
     "@types/node": "^14.14.35",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
+    "ctix-with-enums": "^0.3.2",
     "eslint": "^7.22.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-config-standard-with-typescript": "^20.0.0",
@@ -20,32 +62,13 @@
     "eslint-plugin-promise": "^4.3.1",
     "jest": "^27.3.1",
     "jest-environment-node": "26.6.2",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.2.3"
+    "ts-jest": "^27.0.7"
   },
-  "files": [
-    "dist/jest3.js",
-    "dist/index.js",
-    "package.json",
-    "README.md"
-  ],
-  "keywords": [
-    "ganache",
-    "ethers",
-    "ethereum",
-    "jest"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
   "optionalDependencies": {
     "ethers": ">=5.0.0"
   },
   "peerDependencies": {
     "jest": ">=26.0.0",
     "jest-environment-node": ">=26.0.0"
-  },
-  "scripts": {
-    "build": "npx tsc",
-    "test": "npx jest"
   }
 }

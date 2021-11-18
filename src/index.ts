@@ -2,6 +2,6 @@
  * @exports JestEnvironmentEthers
  */
 
-import JestEnvironmentEthers from './jest3'
+export * from './constants'
+export * from './jest3';
 
-module.exports = JestEnvironmentEthers

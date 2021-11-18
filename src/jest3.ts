@@ -71,7 +71,6 @@ export default class EthersJestEnvironment extends NodeEnvironment {
   }
 
   runScript<T>(script: any): T | null {
-    // @ts-ignore
     return super.runScript(script)
   }
 }
