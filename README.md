@@ -1,14 +1,14 @@
-# Jest3 - Web3 Environemnt for Jest
+# Jest Web3 - Web3 Environemnt for Jest
 
 
 > Jest Testing Environemnt  w/ Ganache Instance and Ethers Provider interface
 
 ## Install
 
-Install dependencies.
+📦  jest-web3@0.1.0
 
 ```sh
-yarn add -D jest3
+yarn add -D jest-web3
 ```
 
 Add to your Jest config.
