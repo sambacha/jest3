@@ -1,0 +1,51 @@
+{
+  "name": "jest3",
+  "description": "Jest Web3",
+  "version": "0.1.0",
+  "dependencies": {
+    "ganache-core": "2.13.2"
+  },
+  "devDependencies": {
+    "@jest/environment": "^27.3.1",
+    "@jest/types": "26.6.2",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^14.14.35",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "jest": "^27.3.1",
+    "jest-environment-node": "26.6.2",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.2.3"
+  },
+  "files": [
+    "dist/jest3.js",
+    "dist/index.js",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "ganache",
+    "ethers",
+    "ethereum",
+    "jest"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "optionalDependencies": {
+    "ethers": ">=5.0.0"
+  },
+  "peerDependencies": {
+    "jest": ">=26.0.0",
+    "jest-environment-node": ">=26.0.0"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "test": "npx jest"
+  }
+}
