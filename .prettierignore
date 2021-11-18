@@ -1,0 +1,7 @@
+dist/
+build/
+*.js
+*.html
+*.css
+*.scss
+docs/
